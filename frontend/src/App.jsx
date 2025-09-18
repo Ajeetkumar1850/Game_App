@@ -1,19 +1,15 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Members from "./pages/Members";
+import Games from "./pages/Games";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <Navbar />
-      <div className="p-6">
-        <Routes>
-          {/* Redirect root "/" to "/members" */}
-          <Route path="/" element={<Navigate to="/members" replace />} />
-          <Route path="/members" element={<Members />} />
-        </Routes>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Members />} />
+        <Route path="/games" element={<Games />} />
+      </Routes>
+    </Router>
   );
 }
 

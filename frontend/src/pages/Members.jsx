@@ -28,7 +28,7 @@ export default function Members() {
       const res = await axios.get(API_URL);
       setMembers(res.data);
     } catch (err) {
-      setError("Failed to fetch members. Please try again later.");
+
       console.error("Error fetching members:", err);
     } finally {
       setLoading(false);
@@ -50,7 +50,6 @@ export default function Members() {
       setForm({ name: "", phoneNumber: "", balance: "" });
       fetchMembers();
     } catch (err) {
-      setError("Error adding member. Phone number may already exist.");
       console.error("Error adding member:", err);
     }
   };

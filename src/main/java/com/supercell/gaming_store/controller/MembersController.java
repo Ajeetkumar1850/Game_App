@@ -12,13 +12,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/members")
 public class MembersController {
-
     private final MembersService membersService;
-
     public MembersController(MembersService membersService) {
         this.membersService = membersService;
     }
-
     @PostMapping
     public ResponseEntity<Members> createMember(@RequestBody MembersRequest membersRequest) {
         Members createdMember = membersService.createMember(membersRequest);

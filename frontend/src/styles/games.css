@@ -1,0 +1,54 @@
+.games-container {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  color: #fff;
+}
+
+.games-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.games-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto 30px auto;
+  max-width: 400px;
+  padding: 20px;
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+.games-form input,
+.games-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.games-form button {
+  padding: 10px;
+  background: #4ade80;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.games-list {
+  margin-top: 20px;
+}
+
+.game-card {
+  background: #334155;
+  margin: 10px auto;
+  padding: 15px;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: left;
+}
