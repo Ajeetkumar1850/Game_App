@@ -1,0 +1,108 @@
+/* Members Page - Gaming UI */
+
+.members-container {
+
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+  color: #e0e0e0;
+  font-family: 'Orbitron', sans-serif; /* Gaming-style font */
+  padding: 2rem;
+}
+
+.members-title {
+margin-left:350px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ffcc;
+  text-shadow: 0px 0px 8px #00ffcc, 0px 0px 16px #0099ff;
+  margin-bottom: 1.5rem;
+}
+
+.members-form {
+margin-left:350px;
+  background: #1e1e2f;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 420px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.members-form:hover {
+  transform: scale(1.02);
+}
+
+.members-form label {
+  display: block;
+  font-weight: 600;
+  color: #aaa;
+  margin-bottom: 0.3rem;
+}
+
+.members-form input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 1rem;
+  background: #2a2a40;
+  color: #fff;
+  outline: none;
+  transition: 0.2s;
+}
+
+.members-form input:focus {
+  background: #33334d;
+  box-shadow: 0 0 6px #00ffcc;
+}
+
+.members-form button {
+  background: linear-gradient(90deg, #00ffcc, #0099ff);
+  color: #000;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.members-form button:hover {
+  background: linear-gradient(90deg, #0099ff, #00ffcc);
+  transform: translateY(-2px);
+}
+
+.members-list {
+margin-left:350px;
+  margin-top: 2rem;
+}
+
+.members-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ff00cc;
+  text-shadow: 0px 0px 6px #ff00cc, 0px 0px 12px #ff0066;
+}
+
+.member-card {
+  background: #222233;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(255, 0, 204, 0.2);
+  transition: 0.2s;
+}
+
+.member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(255, 0, 204, 0.4);
+}
+
+.member-card span {
+  font-size: 1.1rem;
+}
